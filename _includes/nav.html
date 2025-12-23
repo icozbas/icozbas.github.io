@@ -1,0 +1,17 @@
+<a class="skip-link" href="#content">Skip to content</a>
+
+<div class="scanlines"></div>
+
+<nav class="navbar">
+  <div class="nav-links">
+    <a href="/" class="nav-item{% if page.url == '/' %} active{% endif %}">System</a>
+
+    <a href="/about.html" class="nav-item{% if page.url == '/about.html' %} active{% endif %}">Architect</a>
+
+    <a href="/modern-ils.html" class="nav-item{% if page.url == '/modern-ils.html' %} active{% endif %}">Protocol</a>
+
+    <a href="/projects/" class="nav-item{% if page.url contains '/projects' %} active{% endif %}">Projects</a>
+
+    <a href="/library/" class="nav-item{% if page.url contains '/library' %} active{% endif %}">Library</a>
+  </div>
+</nav>
