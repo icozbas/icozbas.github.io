@@ -1,1 +1,0 @@
-# icozbas.github.io
