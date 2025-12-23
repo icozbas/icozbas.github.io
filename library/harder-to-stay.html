@@ -1,327 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: default
+seo_title: "Harder to Stay | Sustainment as System Architecture | Izzet Can Ozbas"
+seo_description: "Design is a moment. Sustainment is a decades long system architecture problem. Notes on ILS and auditable readiness decision support."
+og_title: "Harder to Stay"
+og_description: "Sustainment as system architecture, and why readiness decisions must be auditable."
+og_type: article
+keywords: ["ILS","Sustainment","Readiness","System Architecture","Auditability"]
+date: 2025-12-13
+last_modified_at: 2025-12-13
+---
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<main id="content" class="container">
 
-    <!-- Primary SEO -->
-    <title>Engineering is a sprint; sustainment is the marathon | ILS/IPS</title>
-    <meta name="description" content="Designing an aircraft is a sprint; sustaining readiness is a 40-year systems problem. Notes on ILS/IPS and decision-centric sustainment.">
-    <meta name="author" content="Izzet Can Ozbas">
-    <meta name="robots" content="index,follow,max-image-preview:large">
-    <meta name="theme-color" content="#0B1E3B">
+    <div style="text-align: left; margin-top: 2rem; margin-bottom: 2rem;">
+        <a href="/library/" style="color: var(--color-text-muted); text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;">
+            &lt; BACK_TO_DATABASE
+        </a>
+    </div>
 
-    <!-- Canonical (WWW is source of truth) -->
-    <link rel="canonical" href="https://www.icozbas.com/library/harder-to-stay.html">
+    <section class="hero-section" style="padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 3rem;">
+        <div class="hero-content">
 
-    <!-- Open Graph -->
-    <meta property="og:site_name" content="Izzet Can Ozbas">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Design vs. Sustainment | Izzet Can Ozbas">
-    <meta property="og:description" content="Engineering Analysis: Why designing a fighter jet is a sprint, but keeping it flying for 40 years is the ultimate system architecture challenge.">
-    <meta property="og:url" content="https://www.icozbas.com/library/harder-to-stay.html">
-    <meta property="og:image" content="https://www.icozbas.com/assets/og-card.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+            <div class="hero-meta">
+                <span class="system-status">> LOG ID: 2025-12-13</span>
+                <span class="hero-id">// STATUS: ARCHIVED</span>
+            </div>
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Design vs. Sustainment | Izzet Can Ozbas">
-    <meta name="twitter:description" content="Engineering Analysis: Why designing a fighter jet is a sprint, but keeping it flying for 40 years is the ultimate system architecture challenge.">
-    <meta name="twitter:image" content="https://www.icozbas.com/assets/og-card.png">
+            <h1>
+                DESIGN VS. SUSTAINMENT<br>
+                <span class="text-cognitive-blue">THE ASYMMETRY.</span>
+            </h1>
 
-    <!-- Structured Data (Person + WebSite + BlogPosting) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://www.icozbas.com/#person",
-          "name": "Izzet Can Ozbas",
-          "url": "https://www.icozbas.com/",
-          "jobTitle": "Logistics Systems Engineer (ILS/IPS, Sustainment)",
-          "sameAs": [
-            "https://www.linkedin.com/in/icozbas/"
-          ]
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://www.icozbas.com/#website",
-          "name": "Cognitive Logistics for Readiness",
-          "url": "https://www.icozbas.com/",
-          "description": "Cognitive Logistics for Readiness — turning support data into auditable readiness decisions.",
-          "publisher": { "@id": "https://www.icozbas.com/#person" },
-          "inLanguage": "en"
-        },
-        {
-          "@type": "BlogPosting",
-          "@id": "https://www.icozbas.com/library/harder-to-stay.html#post",
-          "headline": "Engineering is a sprint; sustainment is the marathon | ILS/IPS",
-          "description": "Designing an aircraft is a sprint; sustaining readiness is a 40-year systems problem. Notes on ILS/IPS and decision-centric sustainment.",
-          "image": "https://www.icozbas.com/assets/og-card.png",
-          "author": { "@id": "https://www.icozbas.com/#person" },
-          "publisher": { "@id": "https://www.icozbas.com/#person" },
-          "datePublished": "2025-12-21",
-          "dateModified": "2025-12-21",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://www.icozbas.com/library/harder-to-stay.html"
-          },
-          "isPartOf": { "@id": "https://www.icozbas.com/#website" },
-          "inLanguage": "en",
-          "keywords": [
-            "ILS",
-            "IPS",
-            "Sustainment",
-            "Readiness",
-            "System Architecture",
-            "Lifecycle Cost"
-          ]
-        }
-      ]
-    }
-    </script>
+            <div class="hero-proof">
+                > CONTEXT: Lifecycle Architecture Analysis
+            </div>
 
-    <!-- Styles (root-relative) -->
-    <link rel="stylesheet" href="/style.css?v=2.1">
-
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 stroke=%22%2300D4FF%22 stroke-width=%228%22 fill=%22none%22/></svg>">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-    <a class="skip-link" href="#content">Skip to content</a>
-    <div class="scanlines"></div>
-
-    <nav class="navbar">
-        <div class="nav-links">
-            <a href="/" class="nav-item">System</a>
-            <a href="/about.html" class="nav-item">Architect</a>
-            <a href="/modern-ils.html" class="nav-item">Protocol</a>
-            <a href="/projects/" class="nav-item">Modules</a>
-            <a href="/library/" class="nav-item active">Library</a>
+            <div class="bio wide">
+                <div style="border-left: 4px solid var(--color-critical-orange); padding-left: 1.5rem; margin-bottom: 2.5rem;">
+                    <p style="font-size: 1.25rem; font-weight: 500; color: var(--color-signal-white); margin: 0; line-height: 1.5;">
+                        There is a famous melancholic question in Turkish literature: <em>"Gitmek mi zor, kalmak mı?"</em> (Is it harder to leave, or is it harder to stay?)
+                    </p>
+                </div>
+                <p>
+                    In the engineering domain, we can translate this into a fundamental dilemma: <strong>Is it harder to design a fighter jet, or to keep it combat-ready for 40 years?</strong>
+                </p>
+            </div>
         </div>
-    </nav>
+    </section>
 
-    <main id="content" class="container">
+    <div style="text-align: left; max-width: 800px; margin-bottom: 6rem;">
 
-        <div style="text-align: left; margin-top: 2rem; margin-bottom: 2rem;">
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            As engineers, we are conditioned to worship the design phase. We celebrate wind tunnels, CAD models, and shiny prototypes. The designers are the architects of the "First Flight". They build the asset, cut the red ribbon, and then... they leave.
+        </p>
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            <strong>Integrated Logistics Support (ILS)</strong> is the discipline of "staying". While the design teams disband, ILS inherits the system. It is the framework that must live with the asset, mitigate its entropy, and maintain its operational relevance for the next half-century.
+        </p>
+
+        <h2 class="section-title" style="margin-top: 3rem; font-size: 1.5rem;">Analogy: Event vs. Lifecycle</h2>
+
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            Designing a complex system is like planning a magnificent wedding. It is stressful, expensive, and requires precision. But the goal is a single, perfect day: The Launch.
+        </p>
+
+        <div class="quote-box">
+            <p style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--color-signal-white);">
+                ILS is the marriage. It is waking up every day for 40 years with that system. It is dealing with its degradation, its obsolescence, and its unexpected failures in a muddy hangar.
+            </p>
+        </div>
+
+        <p style="margin-top: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            Design implies a perfect world (Ideal Gas Law). ILS operates in the real world with sandstorms, broken supply chains, and technicians who lost their specialized tools.
+        </p>
+
+        <h2 class="section-title" style="margin-top: 3rem; font-size: 1.5rem;">The Obsolescence Paradox</h2>
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            A designer selects a microchip that is state-of-the-art in 2024. By 2030, the manufacturer ceases production. By 2040, the aircraft still requires that specific architecture to fly.
+        </p>
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            The designer is long gone. The burden falls on the sustainment engineer to solve this <strong>Obsolescence Paradox</strong>: reverse-engineering a component older than the pilot flying the plane, often without the original data package.
+        </p>
+
+        <h2 class="section-title" style="margin-top: 3rem; font-size: 1.5rem;">The 30/70 Cost Reality</h2>
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            The "Iceberg Chart" is a cliché in our industry for a reason. It represents a brutal financial reality:
+        </p>
+        <ul class="list-tech list-check" style="margin-bottom: 1.5rem;">
+            <li><strong>Acquisition Cost: ~30%</strong> (Design + Production). The visible tip.</li>
+            <li><strong>Sustainment Cost: ~70%</strong> (Operations + Support). The submerged mass.</li>
+        </ul>
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            We acknowledge this ratio in PowerPoint decks, yet we often proceed to design systems where a $5 hydraulic seal replacement requires dismantling the entire landing gear.
+        </p>
+
+        <div class="project-card" style="margin-top: 2rem; margin-bottom: 2rem;">
+            <span class="project-title xs font-mono text-cyan">> DIALOGUE_LOG</span>
+            <p class="project-desc" style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--color-text-muted);">
+                > DESIGNER: "I placed this filter deep inside the fuselage to optimize aerodynamics."<br>
+                > MAINTAINER: "Understood. The aircraft is now AOG for 48 hours for a 10-minute filter change."
+            </p>
+        </div>
+
+        <h2 class="section-title" style="margin-top: 3rem; font-size: 1.5rem;">The Verdict</h2>
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            So, is it harder to leave (design) or stay (sustain)?
+        </p>
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            Designing requires genius. It is the spark of creation. It answers the question: <strong>"How do we make this fly?"</strong>
+        </p>
+        <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
+            But ILS requires resilience and systemic intelligence. It solves the problem of <strong>"How do we keep this operational?"</strong> amidst chaos, entropy, and uncertainty.
+        </p>
+        <p style="font-size: 1.1rem; color: var(--color-signal-white); border-left: 2px solid var(--color-cognitive-blue); padding-left: 1rem;">
+            Designing a plane is a triumph of physics. Keeping that plane combat-ready for 40 years is a triumph of <strong>System Architecture</strong>.
+        </p>
+
+        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); display: flex; gap: 20px; flex-wrap: wrap;">
             <a href="/library/" style="color: var(--color-text-muted); text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;">
                 &lt; BACK_TO_DATABASE
             </a>
+            <a href="/modern-ils.html" style="color: var(--color-text-muted); text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;">
+                &lt; PROTOCOL_ILS_TO_IPS
+            </a>
         </div>
 
-        <section class="hero-section" style="padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 3rem;">
-            <div class="hero-content">
-
-                <div class="hero-meta">
-                    <span class="system-status">> LOG ID: 2025-12-13</span>
-                    <span class="hero-id">// STATUS: ARCHIVED</span>
-                </div>
-
-                <h1>
-                    DESIGN VS. SUSTAINMENT<br>
-                    <span class="text-cognitive-blue">THE ASYMMETRY.</span>
-                </h1>
-
-                <div class="hero-proof">
-                    > CONTEXT: Lifecycle Architecture Analysis
-                </div>
-
-                <div class="bio wide">
-                    <div style="border-left: 4px solid var(--color-critical-orange); padding-left: 1.5rem; margin-bottom: 2.5rem;">
-                        <p style="font-size: 1.25rem; font-weight: 500; color: var(--color-signal-white); margin: 0; line-height: 1.5;">
-                            There is a famous melancholic question in Turkish literature: <em>"Gitmek mi zor, kalmak mı?"</em> (Is it harder to leave, or is it harder to stay?)
-                        </p>
-                    </div>
-                    <p>
-                        In the engineering domain, we can translate this into a fundamental dilemma: <strong>Is it harder to design a fighter jet, or to keep it combat-ready for 40 years?</strong>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <div style="text-align: left; max-width: 800px; margin-bottom: 6rem;">
-
-            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                As engineers, we are conditioned to worship the design phase. We celebrate wind tunnels, CAD models, and shiny prototypes. The designers are the architects of the "First Flight". They build the asset, cut the red ribbon, and then... they leave.
-            </p>
-            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                <strong>Integrated Logistics Support (ILS)</strong> is the discipline of "staying". While the design teams disband, ILS inherits the system. It is the framework that must live with the asset, mitigate its entropy, and maintain its operational relevance for the next half-century.
-            </p>
-
-            <h2 class="section-title" style="margin-top: 3rem; font-size: 1.5rem;">Analogy: Event vs. Lifecycle</h2>
-
-            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                Designing a complex system is like planning a magnificent wedding. It is stressful, expensive, and requires precision. But the goal is a single, perfect day: The Launch.
-            </p>
-
-            <div class="quote-box">
-                <p style="font-size: 1.1rem; font-weight: 500; margin: 0; color: var(--color-signal-white);">
-                    ILS is the marriage. It is waking up every day for 40 years with that system. It is dealing with its degradation, its obsolescence, and its unexpected failures in a muddy hangar.
-                </p>
-            </div>
-
-            <p style="margin-top: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                Design implies a perfect world (Ideal Gas Law). ILS operates in the real world with sandstorms, broken supply chains, and technicians who lost their specialized tools.
-            </p>
-
-            <h2 class="section-title" style="margin-top: 3rem; font-size: 1.5rem;">The Obsolescence Paradox</h2>
-            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                A designer selects a microchip that is state-of-the-art in 2024. By 2030, the manufacturer ceases production. By 2040, the aircraft still requires that specific architecture to fly.
-            </p>
-            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                The designer is long gone. The burden falls on the sustainment engineer to solve this <strong>Obsolescence Paradox</strong>: reverse-engineering a component older than the pilot flying the plane, often without the original data package.
-            </p>
-
-            <h2 class="section-title" style="margin-top: 3rem; font-size: 1.5rem;">The 30/70 Cost Reality</h2>
-            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                The "Iceberg Chart" is a cliché in our industry for a reason. It represents a brutal financial reality:
-            </p>
-            <ul class="list-tech list-check" style="margin-bottom: 1.5rem;">
-                <li><strong>Acquisition Cost: ~30%</strong> (Design + Production). The visible tip.</li>
-                <li><strong>Sustainment Cost: ~70%</strong> (Operations + Support). The submerged mass.</li>
-            </ul>
-            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                We acknowledge this ratio in PowerPoint decks, yet we often proceed to design systems where a $5 hydraulic seal replacement requires dismantling the entire landing gear.
-            </p>
-
-            <div class="project-card" style="margin-top: 2rem; margin-bottom: 2rem;">
-                <span class="project-title xs font-mono text-cyan">> DIALOGUE_LOG</span>
-                <p class="project-desc" style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--color-text-muted);">
-                    > DESIGNER: "I placed this filter deep inside the fuselage to optimize aerodynamics."<br>
-                    > MAINTAINER: "Understood. The aircraft is now AOG for 48 hours for a 10-minute filter change."
-                </p>
-            </div>
-
-            <h2 class="section-title" style="margin-top: 3rem; font-size: 1.5rem;">The Verdict</h2>
-            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                So, is it harder to leave (design) or stay (sustain)?
-            </p>
-            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                Designing requires genius. It is the spark of creation. It answers the question: <strong>"How do we make this fly?"</strong>
-            </p>
-            <p style="margin-bottom: 1.5rem; line-height: 1.7; color: var(--color-text-muted);">
-                But ILS requires resilience and systemic intelligence. It solves the problem of <strong>"How do we keep this operational?"</strong> amidst chaos, entropy, and uncertainty.
-            </p>
-            <p style="font-size: 1.1rem; color: var(--color-signal-white); border-left: 2px solid var(--color-cognitive-blue); padding-left: 1rem;">
-                Designing a plane is a triumph of physics. Keeping that plane combat-ready for 40 years is a triumph of <strong>System Architecture</strong>.
-            </p>
-
-            <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); display: flex; gap: 20px; flex-wrap: wrap;">
-                <a href="/library/" style="color: var(--color-text-muted); text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;">
-                    &lt; BACK_TO_DATABASE
-                </a>
-                <a href="/modern-ils.html" style="color: var(--color-text-muted); text-decoration: none; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;">
-                    &lt; PROTOCOL_ILS_TO_IPS
-                </a>
-            </div>
-
-        </div>
-
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-cta-title">COLLABORATION_MODE: ACTIVE</div>
-            <p class="footer-text">
-                Open to collaboration on <span class="font-mono">auditable readiness decision support</span> for ILS/IPS sustainment.
-            </p>
-            <a href="mailto:contact@icozbas.com" class="contact-link">contact@icozbas.com</a>
-
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/icozbas/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-            </div>
-
-            <div class="legal-footer">
-                <span class="system-version">SYSTEM VERSION: v2.5.0 [STABLE]</span>
-                <p class="copyright">&copy; 2025 Izzet Can Ozbas</p>
-                <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer" class="license-link">
-                    <span class="license-icons" aria-hidden="true">
-                        <svg class="cc-badge" viewBox="0 0 24 24" role="img">
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <text x="12" y="12.5">CC</text>
-                        </svg>
-                        <svg class="cc-badge" viewBox="0 0 24 24" role="img">
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <text x="12" y="12.5">BY</text>
-                        </svg>
-                        <svg class="cc-badge" viewBox="0 0 24 24" role="img">
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <text x="12" y="12.5">NC</text>
-                        </svg>
-                    </span>
-                    <span class="license-text">Creative Commons BY-NC 4.0 International</span>
-                </a>
-            </div>
-        </div>
-    </footer>
-
-    <div id="consent-overlay" class="scanlines" style="display: none; background: rgba(11, 30, 59, 0.9); z-index: 9998;"></div>
-
-    <div id="consent-modal" style="display: none;">
-        <div class="consent-header">
-            <span class="system-status">>> PRIVACY_PROTOCOL_INIT</span>
-        </div>
-        <p class="consent-text">
-            This node utilizes <span class="highlight">passive diagnostics</span> (Google Analytics) to audit visitor traffic patterns.
-            <br><br>
-            Operational compliance requires your explicit clearance to enable logging modules.
-        </p>
-        <div class="consent-actions">
-            <button id="btn-reject" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.6rem 1rem;">[ ABORT UPLINK ]</button>
-            <button id="btn-accept" class="btn btn-critical" style="font-size: 0.8rem; padding: 0.6rem 1rem;">AUTHORIZE ></button>
-        </div>
     </div>
 
-    <script>
-        function loadAnalytics() {
-            console.log(">> SYSTEM: Analytics Uplink Authorized.");
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = "https://www.googletagmanager.com/gtag/js?id=G-T4L1M7H3P4";
-            document.head.appendChild(script);
-
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-T4L1M7H3P4', { 'anonymize_ip': true });
-        }
-
-        const consent = localStorage.getItem('user_consent');
-        const banner = document.getElementById('consent-modal');
-        const overlay = document.getElementById('consent-overlay');
-
-        if (consent === 'granted') {
-            loadAnalytics();
-        } else if (consent === 'denied') {
-            console.log(">> SYSTEM: Analytics Uplink Aborted by User.");
-        } else {
-            banner.style.display = 'block';
-            overlay.style.display = 'block';
-        }
-
-        document.getElementById('btn-accept').addEventListener('click', function() {
-            localStorage.setItem('user_consent', 'granted');
-            banner.style.display = 'none';
-            overlay.style.display = 'none';
-            loadAnalytics();
-        });
-
-        document.getElementById('btn-reject').addEventListener('click', function() {
-            localStorage.setItem('user_consent', 'denied');
-            banner.style.display = 'none';
-            overlay.style.display = 'none';
-        });
-    </script>
-
-</body>
-</html>
+</main>

@@ -1,317 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+---
+layout: default
+seo_title: "Modern ILS and Auditable Readiness | ILS/IPS Protocol | Izzet Can Ozbas"
+seo_description: "A decision centric view of Integrated Logistics Support and IPS sustainment. Notes on auditable readiness decision support, digital thread, and maintainability."
+og_title: "Modern ILS Protocol"
+og_description: "Auditable readiness decision support for ILS/IPS sustainment."
+og_type: website
+---
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<main id="content" class="container">
 
-    <!-- Primary SEO -->
-    <title>ILS to IPS: Decision-Centric Sustainment Protocol | Izzet Can Ozbas</title>
-    <meta name="description" content="Engineering the shift from Integrated Logistics Support (ILS) to Integrated Product Support (IPS). Decision-centric sustainment architecture for auditable readiness decisions.">
-    <meta name="author" content="Izzet Can Ozbas">
-    <meta name="robots" content="index,follow,max-image-preview:large">
-    <meta name="theme-color" content="#0B1E3B">
+    <section class="hero-section">
+        <div class="hero-content">
 
-    <!-- Canonical (WWW is source of truth) -->
-    <link rel="canonical" href="https://www.icozbas.com/modern-ils.html">
+            <div class="hero-meta">
+                <span class="system-status">> VISION: COGNITIVE LOGISTICS</span>
+                <span class="hero-id">// TRANSITION_LOGIC</span>
+            </div>
 
-    <!-- Open Graph -->
-    <meta property="og:site_name" content="Izzet Can Ozbas">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="ILS to IPS: Decision-Centric Sustainment Protocol | Izzet Can Ozbas">
-    <meta property="og:description" content="Engineering the shift from ILS to IPS: auditable, decision-centric sustainment architecture.">
-    <meta property="og:url" content="https://www.icozbas.com/modern-ils.html">
-    <meta property="og:image" content="https://www.icozbas.com/assets/og-card.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+            <h1>
+                THE EVOLUTION<br>
+                <span class="text-cognitive-blue">ROADMAP.</span>
+            </h1>
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ILS to IPS: Decision-Centric Sustainment Protocol | Izzet Can Ozbas">
-    <meta name="twitter:description" content="Engineering the shift from ILS to IPS: auditable, decision-centric sustainment architecture.">
-    <meta name="twitter:image" content="https://www.icozbas.com/assets/og-card.png">
+            <div class="hero-proof">
+                > PROTOCOL: ILS-to-IPS Transition Logic
+            </div>
 
-    <!-- Structured Data (WebPage + Person + WebSite) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Person",
-          "@id": "https://www.icozbas.com/#person",
-          "name": "Izzet Can Ozbas",
-          "url": "https://www.icozbas.com/",
-          "jobTitle": "Logistics Engineer",
-          "email": "mailto:contact@icozbas.com"
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://www.icozbas.com/#website",
-          "name": "Cognitive Logistics for Readiness",
-          "url": "https://www.icozbas.com/",
-          "publisher": { "@id": "https://www.icozbas.com/#person" },
-          "inLanguage": "en"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://www.icozbas.com/modern-ils.html#webpage",
-          "url": "https://www.icozbas.com/modern-ils.html",
-          "name": "ILS to IPS: Decision-Centric Sustainment Protocol",
-          "description": "Engineering the shift from Integrated Logistics Support (ILS) to Integrated Product Support (IPS). Decision-centric sustainment architecture for auditable readiness decisions.",
-          "isPartOf": { "@id": "https://www.icozbas.com/#website" },
-          "about": { "@id": "https://www.icozbas.com/#person" },
-          "inLanguage": "en"
-        }
-      ]
-    }
-    </script>
+            <div class="bio wide">
+                <p>
+                    <strong>Engineering the shift from Integrated Logistics Support (ILS) to Integrated Product Support (IPS).</strong>
+                </p>
+                <p>
+                    In many programs, logistics engineering still relies on document-driven processes, periodic file-based data exchanges, and reactive decision cycles.
+                </p>
+                <p>
+                    The sector often treats digitization as transformation. But without connected data, feedback loops, and traceable decision logic, digital outputs remain operationally weak.
+                </p>
 
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 stroke=%22%2300D4FF%22 stroke-width=%228%22 fill=%22none%22/></svg>">
+                <div class="quote-box">
+                    <p style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">
+                        "The Missing Middle is not a hardware problem. It is a data architecture and trust problem."
+                    </p>
+                    <p style="font-size: 1rem; color: var(--color-text-muted); margin: 0;">
+                        The gap between clean analytical models and real-world constraints.
+                    </p>
+                </div>
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Styles (root-relative so subfolders never break) -->
-    <link rel="stylesheet" href="/style.css?v=2.1">
-</head>
-
-<body>
-
-    <a class="skip-link" href="#content">Skip to content</a>
-
-    <div class="scanlines"></div>
-
-    <nav class="navbar">
-        <div class="nav-links">
-            <a href="/" class="nav-item">System</a>
-            <a href="/about.html" class="nav-item">Architect</a>
-            <a href="/modern-ils.html" class="nav-item active">Protocol</a>
-            <a href="/projects/" class="nav-item">Modules</a>
-            <a href="/library/" class="nav-item">Library</a>
+                <p>
+                    <strong>Engineering</strong> <span class="font-mono">decision-centric sustainment architectures</span> to close that gap, supporting the industry transition from ILS to IPS.
+                </p>
+            </div>
         </div>
-    </nav>
+    </section>
 
-    <main id="content" class="container">
+    <h2 class="section-title">Execution Phases</h2>
 
-        <section class="hero-section">
-            <div class="hero-content">
+    <div style="margin-top: 2rem; text-align: left;">
 
-                <div class="hero-meta">
-                    <span class="system-status">> VISION: COGNITIVE LOGISTICS</span>
-                    <span class="hero-id">// TRANSITION_LOGIC</span>
-                </div>
-
-                <h1>
-                    THE EVOLUTION<br>
-                    <span class="text-cognitive-blue">ROADMAP.</span>
-                </h1>
-
-                <div class="hero-proof">
-                    > PROTOCOL: ILS-to-IPS Transition Logic
-                </div>
-
-                <div class="bio wide">
-                    <p>
-                        <strong>Engineering the shift from Integrated Logistics Support (ILS) to Integrated Product Support (IPS).</strong>
-                    </p>
-                    <p>
-                        In many programs, logistics engineering still relies on document-driven processes, periodic file-based data exchanges, and reactive decision cycles.
-                    </p>
-                    <p>
-                        The sector often treats digitization as transformation. But without connected data, feedback loops, and traceable decision logic, digital outputs remain operationally weak.
-                    </p>
-
-                    <div class="quote-box">
-                        <p style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">
-                            "The Missing Middle is not a hardware problem. It is a data architecture and trust problem."
-                        </p>
-                        <p style="font-size: 1rem; color: var(--color-text-muted); margin: 0;">
-                            The gap between clean analytical models and real-world constraints.
-                        </p>
-                    </div>
-
-                    <p>
-                        <strong>Engineering</strong> <span class="font-mono">decision-centric sustainment architectures</span> to close that gap, supporting the industry transition from ILS to IPS.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <h2 class="section-title">Execution Phases</h2>
-
-        <div style="margin-top: 2rem; text-align: left;">
-
-            <div class="phase-card">
-                <span class="phase-number">01 // INTEROPERABILITY & DIGITAL THREAD</span>
-                <h3 class="card-headline">Connecting Static Snapshots</h3>
-                <p style="color: var(--color-text-muted);">
-                    In many sustainment programs, data is still exchanged as deliverable packages (XML exports) that behave like static snapshots.
-                    Phase 1 <strong>establishes</strong> an interoperability layer that connects these outputs into a unified, <span class="highlight">decision-ready data layer</span> while staying compatible with existing standards.
-                </p>
-                <p style="color: var(--color-signal-white); font-size: 0.95rem; margin-top: 1rem; font-weight: 500;">
-                    The scope excludes authoring standards deliverables, focusing instead on turning their outputs into auditable decisions.
-                </p>
-
-                <div class="outcome-box">
-                    <span class="outcome-label">> TARGET_OUTCOME:</span>
-                    <p class="outcome-text">
-                        Cross-domain visibility across documentation, maintenance, and supply data without breaking current workflows.
-                    </p>
-                </div>
-            </div>
-
-            <div class="phase-card" style="border-left-color: var(--color-prob-cyan);">
-                <span class="phase-number">02 // DECISION-CENTRIC ANALYTICS</span>
-                <h3 class="card-headline">From Compliance to Computation</h3>
-                <p style="color: var(--color-text-muted);">
-                    Standards define what outputs should exist, but not how decisions should be computed when demand is intermittent and data is sparse.
-                    Phase 2 focuses on <strong>hybrid probabilistic and machine learning approaches</strong> that translate uncertainty into auditable recommendations for inventory posture.
-                </p>
-                <div class="outcome-box">
-                    <span class="outcome-label">> TARGET_OUTCOME:</span>
-                    <p class="outcome-text">
-                        Readiness-driven recommendations that are <span class="font-mono">explainable</span>, <span class="font-mono">measurable</span>, and <span class="font-mono">technically defensible</span>.
-                    </p>
-                </div>
-            </div>
-
-            <div class="phase-card" style="border-left-color: var(--color-cognitive-blue);">
-                <span class="phase-number">03 // ASSURED DECISION SUPPORT AT SCALE</span>
-                <h3 class="card-headline">Closing the Trust Loop</h3>
-                <p style="color: var(--color-text-muted);">
-                    Closing the data loop is not enough; we also need to close the trust loop.
-                    Phase 3 focuses on explainability, provenance, and audit trails so that AI-assisted sustainment recommendations remain transparent, reviewable, and safe to deploy.
-                </p>
-                <div class="outcome-box">
-                    <span class="outcome-label">> TARGET_OUTCOME:</span>
-                    <p class="outcome-text">
-                        A trust layer that scales decision support without sacrificing engineering accountability.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-    </main>
-
-    <footer>
-        <div class="footer-content">
-
-            <div class="footer-cta-title">
-                COLLABORATION_MODE: ACTIVE
-            </div>
-
-            <p class="footer-text">
-                Open to collaboration on <span class="font-mono">auditable readiness decision support</span> for ILS/IPS sustainment.
+        <div class="phase-card">
+            <span class="phase-number">01 // INTEROPERABILITY & DIGITAL THREAD</span>
+            <h3 class="card-headline">Connecting Static Snapshots</h3>
+            <p style="color: var(--color-text-muted);">
+                In many sustainment programs, data is still exchanged as deliverable packages (XML exports) that behave like static snapshots.
+                Phase 1 <strong>establishes</strong> an interoperability layer that connects these outputs into a unified, <span class="highlight">decision-ready data layer</span> while staying compatible with existing standards.
+            </p>
+            <p style="color: var(--color-signal-white); font-size: 0.95rem; margin-top: 1rem; font-weight: 500;">
+                The scope excludes authoring standards deliverables, focusing instead on turning their outputs into auditable decisions.
             </p>
 
-            <a href="mailto:contact@icozbas.com" class="contact-link">
-                contact@icozbas.com
-            </a>
-
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/icozbas/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-            </div>
-
-            <div class="legal-footer">
-
-                <span class="system-version">SYSTEM VERSION: v2.5.0 [STABLE]</span>
-
-                <p class="copyright">
-                    &copy; 2025 Izzet Can Ozbas
+            <div class="outcome-box">
+                <span class="outcome-label">> TARGET_OUTCOME:</span>
+                <p class="outcome-text">
+                    Cross-domain visibility across documentation, maintenance, and supply data without breaking current workflows.
                 </p>
-
-                <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener noreferrer" class="license-link">
-                    <span class="license-icons" aria-hidden="true">
-                        <svg class="cc-badge" viewBox="0 0 24 24" role="img">
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <text x="12" y="12.5">CC</text>
-                        </svg>
-                        <svg class="cc-badge" viewBox="0 0 24 24" role="img">
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <text x="12" y="12.5">BY</text>
-                        </svg>
-                        <svg class="cc-badge" viewBox="0 0 24 24" role="img">
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <text x="12" y="12.5">NC</text>
-                        </svg>
-                    </span>
-                    <span class="license-text">
-                        Creative Commons BY-NC 4.0 International
-                    </span>
-                </a>
-
             </div>
         </div>
-    </footer>
 
-    <div id="consent-overlay" class="scanlines" style="display: none; background: rgba(11, 30, 59, 0.9); z-index: 9998;"></div>
+        <div class="phase-card" style="border-left-color: var(--color-prob-cyan);">
+            <span class="phase-number">02 // DECISION-CENTRIC ANALYTICS</span>
+            <h3 class="card-headline">From Compliance to Computation</h3>
+            <p style="color: var(--color-text-muted);">
+                Standards define what outputs should exist, but not how decisions should be computed when demand is intermittent and data is sparse.
+                Phase 2 focuses on <strong>hybrid probabilistic and machine learning approaches</strong> that translate uncertainty into auditable recommendations for inventory posture.
+            </p>
+            <div class="outcome-box">
+                <span class="outcome-label">> TARGET_OUTCOME:</span>
+                <p class="outcome-text">
+                    Readiness-driven recommendations that are <span class="font-mono">explainable</span>, <span class="font-mono">measurable</span>, and <span class="font-mono">technically defensible</span>.
+                </p>
+            </div>
+        </div>
 
-    <div id="consent-modal" style="display: none;">
-        <div class="consent-header">
-            <span class="system-status">>> PRIVACY_PROTOCOL_INIT</span>
+        <div class="phase-card" style="border-left-color: var(--color-cognitive-blue);">
+            <span class="phase-number">03 // ASSURED DECISION SUPPORT AT SCALE</span>
+            <h3 class="card-headline">Closing the Trust Loop</h3>
+            <p style="color: var(--color-text-muted);">
+                Closing the data loop is not enough; we also need to close the trust loop.
+                Phase 3 focuses on explainability, provenance, and audit trails so that AI-assisted sustainment recommendations remain transparent, reviewable, and safe to deploy.
+            </p>
+            <div class="outcome-box">
+                <span class="outcome-label">> TARGET_OUTCOME:</span>
+                <p class="outcome-text">
+                    A trust layer that scales decision support without sacrificing engineering accountability.
+                </p>
+            </div>
         </div>
-        <p class="consent-text">
-            This node utilizes <span class="highlight">passive diagnostics</span> (Google Analytics) to audit visitor traffic patterns.
-            <br><br>
-            Operational compliance requires your explicit clearance to enable logging modules.
-        </p>
-        <div class="consent-actions">
-            <button id="btn-reject" class="btn btn-secondary" style="font-size: 0.8rem; padding: 0.6rem 1rem;">
-                [ ABORT UPLINK ]
-            </button>
-            <button id="btn-accept" class="btn btn-critical" style="font-size: 0.8rem; padding: 0.6rem 1rem;">
-                AUTHORIZE >
-            </button>
-        </div>
+
     </div>
 
-    <script>
-        // --- ANALYTICS LOADER FUNCTION ---
-        function loadAnalytics() {
-            console.log(">> SYSTEM: Analytics Uplink Authorized.");
-
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = "https://www.googletagmanager.com/gtag/js?id=G-T4L1M7H3P4";
-            document.head.appendChild(script);
-
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-T4L1M7H3P4', { 'anonymize_ip': true });
-        }
-
-        // --- CONSENT LOGIC ---
-        const consent = localStorage.getItem('user_consent');
-        const banner = document.getElementById('consent-modal');
-        const overlay = document.getElementById('consent-overlay');
-
-        if (consent === 'granted') {
-            loadAnalytics();
-        } else if (consent === 'denied') {
-            console.log(">> SYSTEM: Analytics Uplink Aborted by User.");
-        } else {
-            banner.style.display = 'block';
-            overlay.style.display = 'block';
-        }
-
-        document.getElementById('btn-accept').addEventListener('click', function() {
-            localStorage.setItem('user_consent', 'granted');
-            banner.style.display = 'none';
-            overlay.style.display = 'none';
-            loadAnalytics();
-        });
-
-        document.getElementById('btn-reject').addEventListener('click', function() {
-            localStorage.setItem('user_consent', 'denied');
-            banner.style.display = 'none';
-            overlay.style.display = 'none';
-        });
-    </script>
-
-</body>
-</html>
+</main>

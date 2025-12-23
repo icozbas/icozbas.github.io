@@ -1,0 +1,109 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {% assign page_url = site.url | append: page.url %}
+
+  {%- assign seo_title = page.seo_title | default: page.title | default: "Cognitive Logistics for Readiness" -%}
+  {%- assign seo_description = page.seo_description | default: site.description | default: "Cognitive logistics notes for defense and aerospace sustainment. Turning ILS/IPS support data into auditable readiness decisions and decision-centric systems." -%}
+
+  {%- assign og_title = page.og_title | default: seo_title -%}
+  {%- assign og_description = page.og_description | default: seo_description -%}
+
+  {%- assign og_type = page.og_type -%}
+  {%- if og_type == nil -%}
+    {%- if page.url contains "/library/" and page.url != "/library/" -%}
+      {%- assign og_type = "article" -%}
+    {%- else -%}
+      {%- assign og_type = "website" -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  <!-- Primary SEO -->
+  <title>{{ seo_title }}</title>
+  <meta name="description" content="{{ seo_description }}" />
+  <meta name="author" content="Izzet Can Ozbas" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#0B1E3B" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ page_url }}" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Izzet Can Ozbas" />
+  <meta property="og:type" content="{{ og_type }}" />
+  <meta property="og:title" content="{{ og_title }}" />
+  <meta property="og:description" content="{{ og_description }}" />
+  <meta property="og:url" content="{{ page_url }}" />
+  <meta property="og:image" content="{{ site.url }}/assets/og-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ og_title }}" />
+  <meta name="twitter:description" content="{{ og_description }}" />
+  <meta name="twitter:image" content="{{ site.url }}/assets/og-card.png" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "{{ site.url }}/#person",
+        "name": "Izzet Can Ozbas",
+        "alternateName": ["İzzet Can Özbaş", "Izzet Ozbas", "İzzet Özbaş"],
+        "url": "{{ site.url }}/",
+        "sameAs": ["https://www.linkedin.com/in/icozbas/"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "name": "Cognitive Logistics for Readiness",
+        "url": "{{ site.url }}/",
+        "publisher": { "@id": "{{ site.url }}/#person" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "{{ page_url }}#webpage",
+        "url": "{{ page_url }}",
+        "name": "{{ seo_title }}",
+        "description": "{{ seo_description }}",
+        "isPartOf": { "@id": "{{ site.url }}/#website" },
+        "about": { "@id": "{{ site.url }}/#person" },
+        "inLanguage": "en"
+      }
+      {%- if og_type == "article" -%}
+      ,
+      {
+        "@type": "Article",
+        "@id": "{{ page_url }}#article",
+        "headline": "{{ og_title }}",
+        "description": "{{ og_description }}",
+        "mainEntityOfPage": { "@id": "{{ page_url }}#webpage" },
+        "author": { "@id": "{{ site.url }}/#person" },
+        "publisher": { "@id": "{{ site.url }}/#person" }
+        {%- if page.keywords -%}
+        , "keywords": {{ page.keywords | jsonify }}
+        {%- endif -%}
+        {%- if page.date -%}
+        , "datePublished": "{{ page.date | date_to_xmlschema }}"
+        , "dateModified": "{{ page.last_modified_at | default: page.date | date_to_xmlschema }}"
+        {%- endif -%}
+      }
+      {%- endif -%}
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/style.css?v=2.2" />
+</head>
