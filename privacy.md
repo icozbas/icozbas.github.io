@@ -29,6 +29,6 @@ permalink: /privacy/
     <p>Analitik yalnızca onay ekranında “ACCEPT” seçildiğinde çalışır. Seçiminiz tarayıcınızda <code>user_consent</code> anahtarıyla (localStorage) saklanır.</p>
 
     <h2>İletişim</h2>
-    <p>Gizlilik konuları için: <a href="mailto:contact@icozbas.com">contact@icozbas.com</a></p>
+    <p>Gizlilik konuları için: <a href="mailto:legal@icozbas.com">legal@icozbas.com</a></p>
   </div>
 </div>
