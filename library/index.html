@@ -1,82 +1,145 @@
 ---
 layout: default
-seo_title: "Library | Research Notes on ILS/IPS Sustainment | Izzet Can Ozbas"
-seo_description: "Research notes and essays on ILS/IPS sustainment, readiness engineering, decision support, and the realities of keeping systems operational over decades."
-og_title: "Library"
-og_description: "Research notes on ILS/IPS sustainment and auditable readiness decision support."
-og_type: website
+title: Library
+description: "Technical notes, S-Series documentation work, and insights on ILS/IPS sustainment."
+permalink: /library/
 ---
 
 <main id="content" class="container">
-    
-    <section class="hero-section" style="margin-bottom: 0; padding-bottom: 3rem;">
-        <div class="hero-content">
-            
-            <div class="hero-meta">
-                <span class="system-status">> ARCHIVE: ONLINE</span>
-                <span class="hero-id">// RESEARCH_LOGS</span>
-            </div>
-            
-            <h1>
-                FIELD INTELLIGENCE<br>
-                <span class="text-cognitive-blue">ENGINEERING LOGS.</span>
-            </h1>
 
-            <div class="hero-proof">
-                > ARCHIVE: Engineering Logs & Analysis
-            </div>
-            
-            <div class="bio wide">
-                <p><strong>Engineering logs, whitepapers, and thoughts on the "Missing Middle".</strong></p>
-                <p>Decoding how support data becomes <span class="highlight">auditable decisions</span> under real-world constraints.</p>
-            </div>
-        </div>
-    </section>
+  <section class="hero-section" style="margin-bottom: 0; padding-bottom: 3rem;">
+    <div class="hero-content">
+      <div class="hero-meta">
+        <span class="system-status">> SYSTEM STATUS: ONLINE</span>
+        <span class="hero-id">// LIBRARY_INDEX</span>
+      </div>
+      
+      <h1>
+        FIELD INTELLIGENCE<br>
+        <span class="text-cognitive-blue">ENGINEERING LOGS.</span>
+      </h1>
 
-    <h2 class="section-title" style="margin-top: 0;">Engineering Logs</h2>
-
-    <div class="projects-grid">
-
-        <a href="/library/harder-to-stay.html" class="card-link">
-            <div class="project-card">
-                <span class="project-title xs font-mono text-cyan">
-                    > LOG ID: 2025-12-13
-                </span>
-                <h3 class="card-headline">
-                    Design vs. Sustainment: The Engineering Asymmetry
-                </h3>
-                <p class="project-desc">
-                    "Gitmek mi zor, kalmak mı?" Why engineering is a sprint, but logistics is a marathon. 
-                    An analysis of lifecycle architecture and the "30/70 Cost Reality".
-                </p>
-                <div class="tech-stack">
-                    <span class="tag">LIFECYCLE COST</span>
-                    <span class="tag">SYSTEM ARCHITECTURE</span>
-                    <span class="tag">SUSTAINMENT</span>
-                </div>
-            </div>
-        </a>
-
-        <a href="/library/ghost-town.html" class="card-link">
-            <div class="project-card">
-                <span class="project-title xs font-mono text-cyan">
-                    > LOG ID: 2025-12-06
-                </span>
-                <h3 class="card-headline">
-                    ILS: The Quest in an Academic Ghost Town
-                </h3>
-                <p class="project-desc">
-                    Why is Integrated Logistics Support invisible in modern academia? 
-                    An engineering analysis of the gap between theoretical research and the unforgiving reality of field operations.
-                </p>
-                <div class="tech-stack">
-                    <span class="tag">GAP ANALYSIS</span>
-                    <span class="tag">RESEARCH TO REALITY</span>
-                    <span class="tag">OPERATIONAL RISK</span>
-                </div>
-            </div>
-        </a>
-
+      <div class="hero-proof">
+        > Technical Notes · S-Series Documents · Insights
+      </div>
+      
+      <div class="bio wide">
+        <p><strong>Engineering notes, standards work, and logs from the field.</strong></p>
+        <p>Turning messy support reality into <span class="highlight">auditable decisions</span>.</p>
+      </div>
     </div>
+  </section>
+
+  {% assign insight_items = site.insights | where: "status", "ACTIVE" | sort: "date" | reverse %}
+  {% assign technical_items = site.pages | where: "library_section", "technical" | sort: "date" | reverse %}
+  {% assign sseries_items   = site.pages | where: "library_section", "s-series"  | sort: "date" | reverse %}
+
+
+    <div class="section-headbar">
+    <h2 class="section-title">Insights</h2>
+    <a class="view-all-link" href="/library/insights/">&gt; VIEW ALL</a>
+    </div>
+
+
+  {% if insight_items.size > 0 %}
+  <div class="projects-grid">
+      {% for p in insight_items limit:3 %}
+        {% unless p.url == '/library/insights/' %}
+        
+        <a href="{{ p.url }}" class="card-link">
+            <div class="project-card">
+                <span class="project-title xs font-mono text-cyan">
+                    > LOG ID: {{ p.date | date: "%Y-%m-%d" }}
+                </span>
+                <h3 class="card-headline">{{ p.title }}</h3>
+                <p class="project-desc">{{ p.description | default: p.subtitle }}</p>
+                {% if p.tags %}
+                <div class="tech-stack">
+                    {% for t in p.tags limit:3 %}
+                    <span class="tag">{{ t | upcase }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </a>
+
+        {% endunless %}
+      {% endfor %}
+  </div>
+  {% else %}
+    <p style="opacity: 0.6; font-style: italic;">No active insights found.</p>
+  {% endif %}
+
+
+    <div class="section-headbar">
+    <h2 class="section-title">Technical Notes</h2>
+    <a class="view-all-link" href="/library/technical/">&gt; VIEW ALL</a>
+    </div>
+
+
+  {% if technical_items.size > 0 %}
+  <div class="projects-grid">
+      {% for p in technical_items limit:3 %}
+        {% unless p.url == '/library/technical/' %}
+        
+        <a href="{{ p.url }}" class="card-link">
+            <div class="project-card">
+                <span class="project-title xs font-mono text-cyan">
+                    > DOC ID: {{ p.date | date: "%Y-%m-%d" }}
+                </span>
+                <h3 class="card-headline">{{ p.title }}</h3>
+                <p class="project-desc">{{ p.description }}</p>
+                {% if p.tags %}
+                <div class="tech-stack">
+                    {% for t in p.tags limit:3 %}
+                    <span class="tag">{{ t | upcase }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </a>
+
+        {% endunless %}
+      {% endfor %}
+  </div>
+  {% else %}
+    <p style="opacity: 0.6; font-style: italic;">No technical notes found.</p>
+  {% endif %}
+
+
+    <div class="section-headbar">
+    <h2 class="section-title">S-Series Documents</h2>
+    <a class="view-all-link" href="/library/s-series/">&gt; VIEW ALL</a>
+    </div>
+
+
+  {% if sseries_items.size > 0 %}
+  <div class="projects-grid">
+      {% for p in sseries_items limit:3 %}
+        {% unless p.url == '/library/s-series/' %}
+        
+        <a href="{{ p.url }}" class="card-link">
+            <div class="project-card">
+                <span class="project-title xs font-mono text-cyan">
+                    > STD ID: {{ p.date | date: "%Y-%m-%d" }}
+                </span>
+                <h3 class="card-headline">{{ p.title }}</h3>
+                <p class="project-desc">{{ p.description }}</p>
+                {% if p.tags %}
+                <div class="tech-stack">
+                    {% for t in p.tags limit:3 %}
+                    <span class="tag">{{ t | upcase }}</span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </a>
+
+        {% endunless %}
+      {% endfor %}
+  </div>
+  {% else %}
+    <p style="opacity: 0.6; font-style: italic;">No S-Series documents found.</p>
+  {% endif %}
 
 </main>

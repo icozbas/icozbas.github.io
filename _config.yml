@@ -4,3 +4,18 @@ markdown: kramdown
 
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
+
+collections:
+  insights:
+    output: true
+    permalink: /insights/:slug/
+
+defaults:
+  - scope:
+      path: ""
+      type: "insights"
+    values:
+      layout: "article"
+      section: "Insights"
+      status: "ACTIVE"

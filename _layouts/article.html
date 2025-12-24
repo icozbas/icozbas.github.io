@@ -1,0 +1,75 @@
+---
+layout: default
+---
+
+<div class="container container-article">
+  
+  <div class="article-nav" style="margin-bottom: 2rem;">
+    {% if page.library_section == 'technical' %}
+      <a href="{{ '/library/technical/' | relative_url }}" style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; text-decoration: none; color: rgba(242,242,243,0.7);">
+        &lt; BACK_TO_TECHNICAL
+      </a>
+    {% elsif page.library_section == 's-series' %}
+      <a href="{{ '/library/s-series/' | relative_url }}" style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; text-decoration: none; color: rgba(242,242,243,0.7);">
+        &lt; BACK_TO_SSERIES
+      </a>
+    {% else %}
+      <a href="{{ '/library/insights/' | relative_url }}" style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; text-decoration: none; color: rgba(242,242,243,0.7);">
+        &lt; BACK_TO_INSIGHTS
+      </a>
+    {% endif %}
+  </div>
+
+  <header class="article-hero">
+    <h1 class="article-title">{{ page.title }}</h1>
+
+    {% if page.subtitle %}
+      <p class="article-subtitle" style="color: var(--color-cognitive-blue); font-weight: 500;">
+        {{ page.subtitle }}
+      </p>
+    {% endif %}
+
+    <div class="meta-row article-meta">
+      <span class="system-status" style="border:none; padding:0; background:none; color: var(--color-prob-cyan);">
+        > LOG ID: {{ page.date | date: "%Y-%m-%d" }}
+      </span>
+      
+      {% if page.status %}
+        <span class="meta-sep">·</span>
+        <span style="text-transform: uppercase;">STATUS: {{ page.status }}</span>
+      {% endif %}
+    </div>
+
+    {% if page.proof %}
+      <div class="quote-box article-proof" style="margin-top: 1.5rem; font-size: 0.9rem;">
+        <strong style="color: var(--color-prob-cyan); font-family: var(--font-code);">> CONTEXT:</strong><br>
+        {{ page.proof }}
+      </div>
+    {% endif %}
+  </header>
+
+  <article class="prose">
+    {{ content }}
+  </article>
+
+  <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); display: flex; gap: 20px; flex-wrap: wrap;">
+    <a href="{{ '/library/' | relative_url }}" style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; text-decoration: none; color: rgba(242,242,243,0.7);">
+        &lt; BACK_TO_DATABASE
+    </a>
+
+    {% if page.library_section == 'technical' %}
+      <a href="{{ '/library/technical/' | relative_url }}" style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; text-decoration: none; color: rgba(242,242,243,0.7);">
+          &lt; TECHNICAL_INDEX
+      </a>
+    {% elsif page.library_section == 's-series' %}
+      <a href="{{ '/library/s-series/' | relative_url }}" style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; text-decoration: none; color: rgba(242,242,243,0.7);">
+          &lt; S-SERIES_INDEX
+      </a>
+    {% else %}
+      <a href="{{ '/library/insights/' | relative_url }}" style="font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; text-decoration: none; color: rgba(242,242,243,0.7);">
+          &lt; INSIGHTS_INDEX
+      </a>
+    {% endif %}
+  </div>
+
+</div>

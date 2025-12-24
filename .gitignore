@@ -1,1 +1,18 @@
+# --- JEKYLL SİSTEM DOSYALARI (Kesinlikle gitmemeli) ---
 _site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# --- BAĞIMLILIKLAR VE AYARLAR ---
+vendor/
+.bundle/
+Gemfile.lock
+
+# --- İŞLETİM SİSTEMİ ÇÖPLERİ ---
+.DS_Store
+Thumbs.db
+
+# --- EDİTÖR ---
+.vscode/
+.idea/
