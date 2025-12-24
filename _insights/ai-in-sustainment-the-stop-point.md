@@ -1,25 +1,23 @@
 ---
 layout: article
-title: "AI in Sustainment: The Stop Point"
-subtitle: "Are Integrated Logistics Support (ILS) and Integrated Product Support (IPS) just another passenger on the AI hype train? An engineering view of bounded automation, audit trails, and where the algorithm must stop."
-description: "Bounded automation in sustainment: what AI can do for IPS, where it must stop, and why audit trails define readiness grade decision support."
+title: "AI in Sustainment"
+hero_highlight: "The Stop Point"
+subtitle: "Bounded Automation in ILS/IPS"
+description: "Are Integrated Logistics Support (ILS) and Integrated Product Support (IPS) just another passenger on the AI hype train? An engineering view of bounded automation."
 date: 2025-12-24
 last_modified_at: 2025-12-24
 status: ACTIVE
-
+proof: "AI can compress complexity and surface risk, but it must stop before it triggers an irreversible readiness decision without provenance."
 tags: [IPS, ILS, Sustainment AI, Decision Support, Auditability, Uncertainty, Intermittent Demand, S-Series]
-keywords: [IPS, ILS, Sustainment AI, Bounded Automation, Audit Trails, Decision Support, Readiness, Intermittent Demand, S-Series]
 
+# --- SEO & META DATA ---
+keywords: [IPS, ILS, Sustainment AI, Bounded Automation, Audit Trails, Decision Support, Readiness, Intermittent Demand, S-Series]
 seo_title: "AI in Sustainment: The Stop Point | Bounded Automation in ILS/IPS | Izzet Can Ozbas"
 seo_description: "Bounded automation in sustainment: what AI can do for IPS, where it must stop, and why audit trails define readiness grade decision support."
-
 og_title: "AI in Sustainment: The Stop Point"
 og_description: "Bounded automation in sustainment: what AI can do for IPS, where it must stop, and why audit trails define readiness grade decision support."
 og_type: article
-
-proof: "AI can compress complexity and surface risk, but it must stop before it triggers an irreversible readiness decision without provenance."
 ---
-
 
 There is a massive AI train speeding through defense sustainment right now. Every conference has a GenAI panel. Every whitepaper has an LLM section. Every tender promises “predictive” everything.
 

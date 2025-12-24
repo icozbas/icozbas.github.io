@@ -1,19 +1,24 @@
 ---
 layout: article
 title: "Ghost Town Data"
-subtitle: "The ILS Quest"
+hero_highlight: "The ILS Quest"
+subtitle: "When Support Data Goes Silent"
 description: "Why is Integrated Logistics Support invisible in modern academia? An engineering analysis of the gap between theory and field reality."
 date: 2025-12-06
 last_modified_at: 2025-12-21
 status: ACTIVE
+proof: "CONTEXT: Gap Analysis & Theory vs. Reality"
 tags: [ILS, IPS, Data Quality, Uncertainty, Decision Support, Readiness]
+
+# --- SEO & META DATA ---
 keywords: [ILS, IPS, Data Quality, Uncertainty, Decision Support, Readiness]
 seo_title: "Ghost Town Data | When Support Data Goes Silent | Izzet Can Ozbas"
 seo_description: "What happens when sustainment data becomes sparse, delayed, or inconsistent. Notes on decision support under uncertainty."
 og_title: "Ghost Town Data"
 og_description: "Decision support when the data goes silent."
 og_type: article
-proof: "CONTEXT: Gap Analysis & Theory vs. Reality"
+
+# --- REDIRECTION ---
 redirect_from:
   - /library/ghost-town.html
 ---
