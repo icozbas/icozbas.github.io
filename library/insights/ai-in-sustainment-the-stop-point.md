@@ -17,6 +17,10 @@ seo_description: "Bounded automation in sustainment: what AI can do for IPS, whe
 og_title: "AI in Sustainment: The Stop Point"
 og_description: "Bounded automation in sustainment: what AI can do for IPS, where it must stop, and why audit trails define readiness grade decision support."
 og_type: article
+
+# --- REDIRECTION ---
+redirect_from:
+  - /insights/ai-in-sustainment-the-stop-point/
 ---
 
 There is a massive AI train speeding through defense sustainment right now. Every conference has a GenAI panel. Every whitepaper has an LLM section. Every tender promises “predictive” everything.

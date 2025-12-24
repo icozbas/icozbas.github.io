@@ -21,6 +21,7 @@ og_type: article
 # --- REDIRECTION ---
 redirect_from:
   - /library/harder-to-stay.html
+  - /insights/harder-to-stay.html
 ---
 
 

@@ -21,6 +21,7 @@ og_type: article
 # --- REDIRECTION ---
 redirect_from:
   - /library/ghost-town.html
+  - /insights/ghost-town.html
 ---
 
 When I initiated my research on Integrated Logistics Support (ILS), I anticipated complexity. I expected rigorous mathematical models and dense datasets. What I encountered was **silence**.
