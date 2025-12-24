@@ -223,7 +223,7 @@ h1 {
 }
 
 /* --- SECTION HEADERS & VIEW ALL BUTTONS --- */
-/* Güncellenmiş Bölüm: View All butonlarına teknik stil eklendi */
+/* --- SECTION HEADERS & VIEW ALL BUTTONS --- */
 
 .section-title {
     font-family: var(--font-head); font-size: 1.4rem; font-weight: 800;
@@ -233,26 +233,21 @@ h1 {
     padding-bottom: 8px; display: inline-block;
 }
 
+/* Headbar DÜZELTİLDİ: Artık Flex değil, normal blok. */
 .section-headbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end; /* Alt çizgiyle hizalar */
-    gap: 1rem;
-    margin-top: 4rem;      /* Üstten boşluk */
-    margin-bottom: 1.5rem; /* Alttan boşluk */
-    border-bottom: 1px solid rgba(33, 126, 170, 0.35); /* İnce bir çizgi */
-    padding-bottom: 0.5rem;
+    position: relative; /* Butonu buna göre hizalayacağız */
+    display: block;     /* Başlığın ortalanmasına izin ver */
+    margin-top: 4rem;      
+    margin-bottom: 2.5rem; 
+    text-align: center; /* İçindekileri (Başlığı) ortala */
 }
 
 .section-headbar .section-title {
-    margin: 0;
-    border: none; /* section-title'ın kendi border'ını eziyoruz */
-    padding: 0;
-    line-height: 1;
+    margin-bottom: 0;
 }
 
 .view-all-link {
-    font-family: var(--font-code); /* JetBrains Mono */
+    font-family: var(--font-code);
     font-size: 0.8rem;
     font-weight: 700;
     color: var(--color-text-muted);
@@ -260,13 +255,17 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     
-    /* Buton Görünümü */
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.15);
     padding: 0.4rem 0.8rem;
     border-radius: var(--border-radius-tech);
     
     transition: all 0.2s ease;
+    
+    /* KRİTİK AYAR: Butonu sağa çiviliyoruz */
+    position: absolute;
+    right: 0;
+    bottom: 5px; /* Çizgiyle hizalamak için */
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -274,10 +273,10 @@ h1 {
 }
 
 .view-all-link:hover {
-    color: var(--color-prob-cyan);       /* Yazı Cyan olsun */
-    border-color: var(--color-prob-cyan); /* Çerçeve Cyan olsun */
-    background: rgba(0, 212, 255, 0.08);  /* Hafif parlasın */
-    box-shadow: 0 0 10px rgba(0, 212, 255, 0.15); /* Neon glow */
+    color: var(--color-prob-cyan);       
+    border-color: var(--color-prob-cyan); 
+    background: rgba(0, 212, 255, 0.08); 
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.15); 
     transform: translateY(-1px);
 }
 
@@ -285,15 +284,18 @@ h1 {
     transform: translateY(1px);
 }
 
+/* Mobil Ayarı: Ekran küçülünce buton başlığın üstüne binmesin, alta insin */
 @media (max-width: 640px) {
     .section-headbar {
-        flex-direction: row; /* Yan yana kalsın ama sığmazsa */
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-top: 3rem;
+        gap: 1rem;
     }
+    
     .view-all-link {
-        font-size: 0.7rem;
-        padding: 0.3rem 0.6rem;
+        position: static; /* Absolute iptal, akışa girsin */
+        margin-top: 0.5rem;
     }
 }
 
