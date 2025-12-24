@@ -1,13 +1,23 @@
 ---
-layout: article
-title: "Harder to Stay"
-subtitle: "Design vs. Sustainment: The Asymmetry"
-description: "Design is a moment. Sustainment is a decades long system architecture problem."
+layout: default
+title: "Design vs. Sustainment: The Engineering Asymmetry"
+subtitle: "Harder to Stay"
+description: "Design is a moment. Sustainment is a decades-long system architecture problem: obsolescence, AOG reality, and auditable readiness decisions."
 date: 2025-12-13
-status: ACTIVE
-proof: "Lifecycle Architecture Analysis"
-tags: [ILS, Sustainment, Readiness, System Architecture]
+last_modified_at: 2025-12-21
+status: ARCHIVED
+tags: [ILS, Sustainment, Readiness, System Architecture, Auditability]
+keywords: [ILS, Sustainment, Readiness, System Architecture, Auditability]
+seo_title: "Harder to Stay | Sustainment as System Architecture | Izzet Can Ozbas"
+seo_description: "Design is a moment. Sustainment is a decades-long system architecture problem. Notes on ILS and auditable readiness decision support."
+og_title: "Harder to Stay"
+og_description: "Sustainment as system architecture, and why readiness decisions must be auditable."
+og_type: article
+proof: "CONTEXT: Lifecycle Architecture Analysis"
+redirect_from:
+   - /library/harder-to-stay.html
 ---
+
 
 > There is a famous melancholic question in Turkish literature: *"Gitmek mi zor, kalmak mı?"* (Is it harder to leave, or is it harder to stay?)
 
