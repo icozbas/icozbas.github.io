@@ -129,25 +129,43 @@ og_type: website
 
     </div>
 
-    <h2 class="section-title">Latest Intelligence</h2>
+    <div class="section-headbar">
+        <h2 class="section-title">Latest Intelligence</h2>
+        <a href="/library/" class="view-all-link">
+            VIEW ARCHIVE &rarr;
+        </a>
+    </div>
 
-    <a href="/library/harder-to-stay.html" class="card-link section-spacing-bottom" style="display: block; max-width: 800px; margin: 0 auto 5rem auto;">
+    {% assign latest_post = site.insights | where: "status", "ACTIVE" | sort: "date" | reverse | first %}
+
+    {% if latest_post %}
+    <a href="{{ latest_post.url }}" class="card-link section-spacing-bottom" style="display: block; max-width: 800px; margin: 0 auto 5rem auto;">
         <div class="project-card">
             <div class="card-header-flex">
-                <span class="project-title">Design vs. Sustainment: The Engineering Asymmetry</span>
-                <span class="tag tag-featured">FEATURED</span>
+                <span class="project-title">
+                    {{ latest_post.title }}
+                    {% if latest_post.hero_highlight %}
+                        : <span class="text-cognitive-blue">{{ latest_post.hero_highlight }}</span>
+                    {% endif %}
+                </span>
+                <span class="tag tag-featured">LATEST LOG</span>
             </div>
 
             <p class="project-desc spacer-top">
-                "Gitmek mi zor, kalmak mı?" Why engineering is a sprint, but logistics is a marathon.
-                An analysis of lifecycle architecture and the "30/70 Cost Reality".
+                {{ latest_post.description }}
             </p>
+            
+            {% if latest_post.tags %}
             <div class="tech-stack">
-                <span class="tag">LIFECYCLE COST</span>
-                <span class="tag">SYSTEM ARCHITECTURE</span>
-                <span class="tag">SUSTAINMENT</span>
+                {% for tag in latest_post.tags limit:3 %}
+                    <span class="tag">{{ tag | upcase }}</span>
+                {% endfor %}
             </div>
+            {% endif %}
         </div>
     </a>
+    {% else %}
+        <p style="text-align:center; opacity:0.6; padding-bottom: 5rem;">No intelligence logs active currently.</p>
+    {% endif %}
 
 </main>
