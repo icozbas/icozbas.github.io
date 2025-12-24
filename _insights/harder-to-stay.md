@@ -1,21 +1,26 @@
 ---
 layout: article
-title: "Design vs. Sustainment: The Engineering Asymmetry"
+title: "Design vs. Sustainment"
+hero_highlight: "The Engineering Asymmetry"
 subtitle: "Harder to Stay"
 description: "Design is a moment. Sustainment is a decades-long system architecture problem: obsolescence, AOG reality, and auditable readiness decisions."
 date: 2025-12-13
 last_modified_at: 2025-12-21
 status: ACTIVE
+proof: "CONTEXT: Lifecycle Architecture Analysis"
 tags: [ILS, Sustainment, Readiness, System Architecture, Auditability]
+
+# --- SEO & META DATA ---
 keywords: [ILS, Sustainment, Readiness, System Architecture, Auditability]
 seo_title: "Harder to Stay | Sustainment as System Architecture | Izzet Can Ozbas"
 seo_description: "Design is a moment. Sustainment is a decades-long system architecture problem. Notes on ILS and auditable readiness decision support."
 og_title: "Harder to Stay"
 og_description: "Sustainment as system architecture, and why readiness decisions must be auditable."
 og_type: article
-proof: "CONTEXT: Lifecycle Architecture Analysis"
+
+# --- REDIRECTION ---
 redirect_from:
-   - /library/harder-to-stay.html
+  - /library/harder-to-stay.html
 ---
 
 
