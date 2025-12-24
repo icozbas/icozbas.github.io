@@ -9,7 +9,7 @@ plugins:
 collections:
   insights:
     output: true
-    permalink: /insights/:slug/
+    permalink: /library/insights/:slug/
 
 defaults:
   - scope:
