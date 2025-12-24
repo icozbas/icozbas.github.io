@@ -11,7 +11,7 @@ permalink: /impressum/
 
   <div class="prose">
     <p><strong>Name</strong><br>İzzet Can Özbaş</p>
-    <p><strong>Address</strong><br>Adakale Sk. 8/8 06420<br>Türkiye</p>
+    <p><strong>Address</strong><br>Adakale Sk. 8/8 06420<br>Ankara / Türkiye</p>
     <p><strong>Contact</strong><br><a href="mailto:legal@icozbas.com">legal@icozbas.com</a></p>
   </div>
 </div>

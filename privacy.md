@@ -18,7 +18,7 @@ permalink: /privacy/
     <p>Analytics runs only after you choose “ACCEPT” on the consent prompt. Your choice is stored locally in your browser (localStorage) under <code>user_consent</code>.</p>
 
     <h2>Contact</h2>
-    <p>If you have a privacy question, contact: <a href="mailto:contact@icozbas.com">contact@icozbas.com</a></p>
+    <p>If you have a privacy question, contact: <a href="mailto:legal@icozbas.com">legal@icozbas.com</a></p>
 
     <hr>
 
