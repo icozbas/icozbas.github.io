@@ -40,9 +40,15 @@ layout: default
     </h1>
 
     {% if page.subtitle %}
-      <p class="article-subtitle" style="font-size: 1.1rem; color: rgba(242,242,243,0.8); margin-top: 0.5rem;">
+      <p class="article-subtitle" style="font-size: 1.3rem; color: var(--color-signal-white); margin-top: 0.5rem; margin-bottom: 1rem; font-weight: 500;">
         {{ page.subtitle }}
       </p>
+    {% endif %}
+
+    {% if page.description %}
+      <div class="article-description" style="font-size: 1.1rem; color: rgba(242,242,243,0.85); line-height: 1.6; max-width: 780px; margin-top: 0;">
+        {{ page.description }}
+      </div>
     {% endif %}
 
     {% if page.proof %}
