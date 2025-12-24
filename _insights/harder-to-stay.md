@@ -5,7 +5,7 @@ subtitle: "Harder to Stay"
 description: "Design is a moment. Sustainment is a decades-long system architecture problem: obsolescence, AOG reality, and auditable readiness decisions."
 date: 2025-12-13
 last_modified_at: 2025-12-21
-status: ARCHIVED
+status: ACTIVE
 tags: [ILS, Sustainment, Readiness, System Architecture, Auditability]
 keywords: [ILS, Sustainment, Readiness, System Architecture, Auditability]
 seo_title: "Harder to Stay | Sustainment as System Architecture | Izzet Can Ozbas"
