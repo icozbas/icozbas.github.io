@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: "Ghost Town Data"
 subtitle: "The ILS Quest"
 description: "Why is Integrated Logistics Support invisible in modern academia? An engineering analysis of the gap between theory and field reality."

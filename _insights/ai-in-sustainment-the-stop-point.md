@@ -1,4 +1,5 @@
 ---
+layout: article
 title: "AI in ILS/IPS: The Stop Point"
 subtitle: "Are Integrated Logistics Support (ILS) and Integrated Product Support (IPS) just another passenger on the AI hype train? An engineering view of bounded automation, audit trails, and where the algorithm must stop."
 description: "Bounded automation in sustainment: what AI can do for IPS, where it must stop, and why audit trails define readiness grade decision support."

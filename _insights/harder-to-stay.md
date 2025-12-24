@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: "Design vs. Sustainment: The Engineering Asymmetry"
 subtitle: "Harder to Stay"
 description: "Design is a moment. Sustainment is a decades-long system architecture problem: obsolescence, AOG reality, and auditable readiness decisions."
