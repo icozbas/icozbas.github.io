@@ -5,7 +5,7 @@ hero_highlight: "The Stop Point"
 subtitle: "Bounded Automation in ILS/IPS"
 description: "Are Integrated Logistics Support (ILS) and Integrated Product Support (IPS) just another passenger on the AI hype train? An engineering view of bounded automation."
 date: 2025-12-24
-last_modified_at: 2025-12-24
+last_modified_at: 2025-12-25
 status: ACTIVE
 proof: "AI can compress complexity and surface risk, but it must stop before it triggers an irreversible readiness decision without provenance."
 tags: [IPS, ILS, Sustainment AI, Decision Support, Auditability, Uncertainty, Intermittent Demand, S-Series]
