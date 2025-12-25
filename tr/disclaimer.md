@@ -6,7 +6,7 @@ permalink: /tr/disclaimer/
 
 <div class="container container-article">
   <div class="article-hero">
-    <h1 class="article-title">Sorumluluk Reddi</h1>
+    <h1 class="article-title">SORUMLULUK REDDİ</h1>
   </div>
 
   <div class="prose">
