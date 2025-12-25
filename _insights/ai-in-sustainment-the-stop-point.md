@@ -116,7 +116,7 @@ In ILS/IPS, if a model recommends:
 
 Then the decision must be traceable to assumptions, inputs, and sensitivity. Otherwise it is not a decision, it is a bet.
 
-I do not sell opaque black boxes, and I do not claim certainty where uncertainty dominates.
+I do not build opaque black boxes, and I do not claim certainty where uncertainty dominates.
 
 ## Black box vs glass box
 
