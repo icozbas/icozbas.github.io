@@ -25,7 +25,7 @@ redirect_from:
 
 There is a massive AI train speeding through defense sustainment right now. Every conference has a GenAI panel. Every whitepaper has an LLM section. Every tender promises “predictive” everything.
 
-So the question becomes unavoidable: **Is ILS and IPS on this train too?**
+So the question becomes unavoidable: **Are ILS and IPS on this train too?**
 
 My answer is uncomfortable because I sit on both sides. I build models. I care about data. I want better decisions. But I also know the exact station where I need to get off.
 
