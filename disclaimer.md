@@ -10,13 +10,16 @@ permalink: /disclaimer/
   </div>
 
   <div class="prose">
-    <h2>English</h2>
-    <p>This website is for general information and personal academic notes. It is not professional advice. Use at your own discretion.</p>
 
-    <h2>Türkçe</h2>
-    <p>Bu site genel bilgilendirme ve kişisel akademik notlar içindir. Profesyonel tavsiye değildir. Kullanım sorumluluğu kullanıcıya aittir.</p>
+    <div class="article-nav" style="margin-bottom: 1.25rem;">
+      <a class="nav-item active" href="/disclaimer/">EN</a>
+      <a class="nav-item" href="/tr/disclaimer/">TR</a>
+      <a class="nav-item" href="/de/disclaimer/">DE</a>
+    </div>
 
-    <h2>Deutsch</h2>
-    <p>Diese Website dient der allgemeinen Information und dem Teilen persönlicher akademischer Notizen. Sie stellt keine professionelle Beratung dar. Die Nutzung erfolgt nach eigenem Ermessen.</p>
+    <p>
+      This website is for general information and personal academic notes. It is not professional advice. Use at your own discretion.
+    </p>
+
   </div>
 </div>
