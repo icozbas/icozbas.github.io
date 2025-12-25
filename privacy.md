@@ -7,44 +7,60 @@ permalink: /privacy/
 <div class="container container-article">
   <div class="article-hero">
     <h1 class="article-title">Privacy Policy</h1>
-    <div class="article-meta">Last updated: 24 Dec 2025</div>
+    <div class="article-meta">Last updated: 25 Dec 2025</div>
   </div>
 
   <div class="prose">
-    <h2>English</h2>
+
+    <div class="article-nav" style="margin-bottom: 1.25rem;">
+      <a class="nav-item active" href="/privacy/">EN</a>
+      <a class="nav-item" href="/tr/privacy/">TR</a>
+      <a class="nav-item" href="/de/privacy/">DE</a>
+    </div>
 
     <h3>Summary</h3>
-    <p>This site is a personal academic website. It does not offer commercial services. Basic technical logs may be processed for security and delivery.</p>
+    <p>
+      This is a personal academic website. It does not offer commercial services, user accounts, or advertising.
+      The site is designed to be low-data and privacy-respecting.
+    </p>
 
     <h3>Analytics</h3>
-    <p>Analytics runs only after you choose <strong>ACCEPT</strong> on the consent prompt. Your choice is stored locally in your browser (localStorage) under <code>user_consent</code>.</p>
+    <p>
+      This website uses <strong>Cloudflare Web Analytics</strong> to understand high-level traffic trends
+      (for example: page views, referrers, and broad device categories).
+      Cloudflare states that its Web Analytics does not use cookies or localStorage and does not fingerprint individuals for analytics purposes.
+    </p>
+
+    <h3>Technical logs and security</h3>
+    <p>
+      Like most websites, basic technical data may be processed to deliver the site and protect it against abuse
+      (for example: IP address, user agent, request metadata, and security-related signals).
+      This data is used for reliability and security, not for profiling.
+    </p>
+
+    <h3>Cookies</h3>
+    <p>
+      This website does not intentionally set analytics or advertising cookies.
+      Some cookies may still be set in limited cases by infrastructure components for security or strictly necessary functionality.
+      Where cookies are used, they are intended to be strictly necessary and not for advertising.
+    </p>
+
+    <h3>Data sharing</h3>
+    <p>
+      Site traffic and security processing may involve Cloudflare as a service provider.
+      I do not sell personal data.
+    </p>
+
+    <h3>Your choices</h3>
+    <ul>
+      <li>You can use browser features or content blockers to limit analytics scripts and third-party connections.</li>
+      <li>You can contact me for privacy questions using the email below.</li>
+    </ul>
 
     <h3>Contact</h3>
-    <p>If you have a privacy question, contact: <a href="mailto:legal@icozbas.com">legal@icozbas.com</a></p>
-
-    <h2>Türkçe</h2>
-
-    <h3>Özet</h3>
-    <p>Bu site kişisel akademik içerik paylaşır ve ticari hizmet sunmaz. Güvenlik ve sunum amacıyla temel teknik kayıtlar işlenebilir.</p>
-
-    <h3>Analitik</h3>
-    <p>Analitik yalnızca onay ekranında <strong>ACCEPT</strong> seçildiğinde çalışır. Seçiminiz tarayıcınızda <code>user_consent</code> anahtarıyla (localStorage) saklanır.</p>
-
-    <h3>İletişim</h3>
-    <p>Gizlilik konuları için: <a href="mailto:legal@icozbas.com">legal@icozbas.com</a></p>
-
-    <h2>Deutsch</h2>
-
-    <h3>Zusammenfassung</h3>
-    <p>Diese Website ist eine persönliche akademische Website. Sie bietet keine kommerziellen Dienstleistungen an. Grundlegende technische Protokolldaten können zur Auslieferung und Sicherheit verarbeitet werden.</p>
-
-    <h3>Analytik</h3>
-    <p>Analytik läuft nur, nachdem Sie im Hinweisfenster <strong>ACCEPT</strong> auswählen. Ihre Auswahl wird lokal in Ihrem Browser gespeichert (localStorage) unter <code>user_consent</code>.</p>
-
-    <h3>Kontakt</h3>
-    <p>Bei Fragen zum Datenschutz: <a href="mailto:legal@icozbas.com">legal@icozbas.com</a></p>
-
-    <hr>
+    <p>
+      If you have a privacy question: <a href="mailto:legal@icozbas.com">legal@icozbas.com</a>
+    </p>
 
   </div>
 </div>
