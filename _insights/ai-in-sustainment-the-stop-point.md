@@ -164,12 +164,6 @@ Yes.
 
 But I am not riding it to full autonomy narratives. I am riding it to a specific station: **decision support under uncertainty**.
 
-Because the product I actually sell is not automation. It is decision confidence.
-
-And confidence only counts when you can explain it, test it, and audit it.
-
-That is the stop point.
-
 If your ILS/IPS AI roadmap cannot answer:
 
 - What the model assumes
