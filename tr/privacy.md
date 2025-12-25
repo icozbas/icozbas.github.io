@@ -6,7 +6,7 @@ permalink: /tr/privacy/
 
 <div class="container container-article">
   <div class="article-hero">
-    <h1 class="article-title">Gizlilik Politikası</h1>
+    <h1 class="article-title">GİZLİLİK POLİTİKASI</h1>
     <div class="article-meta">Son güncelleme: 25 Aralık 2025</div>
   </div>
 
