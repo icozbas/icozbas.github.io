@@ -2,12 +2,12 @@
 layout: article
 title: "AI in Sustainment"
 hero_highlight: "The Stop Point"
-subtitle: "Bounded Automation in ILS/IPS"
-description: "Are Integrated Logistics Support (ILS) and Integrated Product Support (IPS) just another passenger on the AI hype train? An engineering view of bounded automation."
+subtitle: "Why Bounded Automation is the Only Way for ILS/IPS"
+description: "Everyone in defense sustainment feels the pressure to adopt AI. Here is the engineering view on bounded automation: what AI can do, where it must stop, and why readiness requires provenance."
 date: 2025-12-24
-last_modified_at: 2025-12-25
+last_modified_at: 2025-12-26
 status: ACTIVE
-proof: "AI can compress complexity and surface risk, but it must stop before it triggers an irreversible readiness decision without provenance."
+proof: "AI should accelerate analysis, compress complexity, and surface risk, but it must stop before it triggers an irreversible action."
 tags: [IPS, ILS, Sustainment AI, Decision Support, Auditability, Uncertainty, Intermittent Demand, S-Series]
 
 # --- SEO & META DATA ---
@@ -23,153 +23,93 @@ redirect_from:
   - /insights/ai-in-sustainment-the-stop-point/
 ---
 
-There is a massive AI train speeding through defense sustainment right now. Every conference has a GenAI panel. Every whitepaper has an LLM section. Every tender promises “predictive” everything.
+Everyone in defense sustainment feels the pressure right now. From conferences to tenders, the message is loud: "Adopt AI or get left behind." It is tempting to jump on the bandwagon, promising predictive maintenance and automated supply chains.
 
-So the question becomes unavoidable: **Are ILS and IPS on this train too?**
+But as engineers working in Integrated Logistics Support (ILS) and Integrated Product Support (IPS), we have to ask the uncomfortable question: **Is this safe?**
 
-My answer is uncomfortable because I sit on both sides. I build models. I care about data. I want better decisions. But I also know the exact station where I need to get off.
+I sit on both sides of this argument. I build models, I love data, and I advocate for better decision-making tools. But I also know exactly where the automation must stop. Not because I doubt the technology, but because sustainment is not a playground. In our domain, a "hallucination" isn't just a funny chatbot error—it is a readiness risk.
 
-Not because AI is useless, but because sustainment is not a playground. In this domain, the failure mode is not “a funny chatbot mistake”. The failure mode is readiness risk.
+And operational readiness does not tolerate ambiguity without accountability.
 
-And readiness does not tolerate ambiguity without accountability.
+## The Data Paradox in IPS
 
-## The IPS data paradox
+We are in the middle of a massive shift from ILS to IPS. We are finally moving away from static PDFs to structured, S-Series compliant digital ecosystems.
 
-The shift from Integrated Logistics Support (ILS) to Integrated Product Support (IPS) is real and it is data-driven. We are moving away from static PDFs and toward structured digital product support ecosystems.
+This creates a dangerous illusion:
 
-S-Series outputs and related data flows can create a dangerous illusion:
+> “We finally have enough data. Let’s feed it into a neural network and let it run the supply chain.”
 
-> “We finally have enough data. Just feed it into a neural network and let it run the supply chain.”
+This is where the narrative breaks. In sustainment, having "more data" rarely means having "more truth." Often, it just means we have:
 
-This is where many AI narratives quietly break.
-
-In sustainment, “more data” does not automatically mean “more truth”. What it often means is:
-
-- More fields that look precise but encode assumptions
+- More fields that look precise but encode hidden assumptions
 - More records that are consistent in format but inconsistent in meaning
-- More text that is operationally important but linguistically messy
-- More gaps that only appear when you model tail risk
+- More gaps that only reveal themselves when we try to model tail risk
 
-Compliance produces data. Readiness needs decisions. Those are not the same thing.
+Compliance produces data. Readiness requires decisions. We must not confuse the two.
 
-## Why “hallucination” is not a joke here
+## Why "Provenance" Matters More Than "Prediction"
 
-In many civilian settings, a black box optimizer can be tolerated. If it fails, the cost is usually bounded: a late delivery, a suboptimal route, a minor SLA penalty.
+In civilian logistics, a black-box optimizer is fine. If it fails, a package arrives late. The cost is bounded.
 
-In defense sustainment, the cost is not bounded in the same way. A wrong recommendation can cascade:
+In defense, the cost of a wrong recommendation is not bounded in the same way. A false confidence in stock posture or an optimized maintenance plan that collapses under operational tempo can trigger unplanned AOG (Aircraft on Ground) events.
 
-- An unplanned AOG event
-- Cannibalization becoming policy instead of exception
-- False confidence in stock posture
-- A maintenance plan that looks optimal on paper but collapses under tempo or lead time shocks
+The core problem isn't that AI makes mistakes—humans make them too. The problem is that **AI creates confidence without provenance.** It gives you an answer without showing the "why."
 
-The core problem is not “AI makes mistakes”. Humans make mistakes too.
+In our line of work, that is operational debt. This brings us to the core of my philosophy: **The Stop Point.**
 
-The core problem is: **AI can create confidence without provenance.** And confidence without provenance is operational debt.
+## The Stop Point Protocol
 
-That is the heart of the stop point.
+My approach isn't to reject AI, but to enforce **bounded automation**. AI should accelerate analysis, compress complexity, and surface risks, but it must stop before it triggers an irreversible action.
 
-## The stop point protocol
+Here is a simple mental model:
 
-My approach is not blind automation. It is **bounded automation**: AI can process signal, compress complexity, and surface risk, but it must stop before it triggers an irreversible action.
+- **Automation is allowed** to accelerate the "OODA Loop" (Observe, Orient).
+- **Automation is NOT allowed** to finalize the "Decide and Act" without human validation.
 
-If you want a simple mental model:
+Here is how this protocol works in practice.
 
-- Automation is allowed to accelerate analysis.
-- Automation is not allowed to finalize accountability.
+### 1) AI is excellent at detecting demand structure
 
-Here is the protocol.
+Humans are terrible at understanding intermittent demand. We see patterns where there are none.
 
-### 1) AI can detect intermittent demand structure better than humans
+AI is far better at classifying demand behavior—distinguishing between "lumpy," "erratic," and "smooth" demand. It can move us away from single-point forecasts towards probabilistic scenarios. This isn't magic; it is just better math for uncertainty.
 
-Intermittent demand is not “rare demand”. It is often a mix of sparsity, bursts, and long quiet periods. Humans are pattern-seeking and we overfit stories to thin signals.
+### 2) AI is the ultimate data janitor
 
-AI can help by:
+A huge part of IPS data is messy—free text, inconsistent naming, operational shorthand.
 
-- Classifying demand behavior (lumpy, intermittent, erratic)
-- Proposing scenario distributions rather than single point forecasts
-- Quantifying uncertainty instead of hiding it inside averages
+AI is genuinely useful here. It can normalize maintenance narratives, extract entities, and map inconsistent descriptions into analytics-ready categories. It turns the library into a decision tool, without pretending the library *is* the decision.
 
-This is not about “prediction magic”. It is about identifying which parts of the portfolio require probability first planning.
+### 3) But AI cannot be the Authority
 
-### 2) AI can clean and standardize messy support data
+This is the station where I get off the train.
 
-A large portion of sustainment data is not model ready. It is free text, inconsistent naming, partial fields, or operational shorthand.
+If a model recommends not stocking a critical spare, delaying maintenance, or accepting a specific availability risk, that recommendation must be traceable. I need to see the assumptions, the inputs, and the sensitivity analysis.
 
-AI is genuinely useful here:
+If I cannot audit the decision, I cannot accept the risk.
 
-- NLP-assisted normalization of maintenance narratives
-- Entity extraction for part references, symptoms, failure modes
-- Mapping inconsistent descriptions into analytics ready categories
+## From Black Box to Glass Box
 
-This is the data bridge work. It turns the library into decisions, without pretending the library is the decision.
+We do not need black boxes in defense support; we need **glass boxes**.
 
-### 3) AI cannot be the final authority on readiness risk without auditability
+A glass box recommendation doesn't just give an answer. It answers three critical questions:
 
-This is the station where I get off.
+1. **What is the decision?** Example: Increase buffer stock for Part X, or trigger an engineering review.
 
-In ILS/IPS, if a model recommends:
+2. **What is the uncertainty?** Example: Demand is sparse, and lead time volatility is high.
 
-- Do not stock this critical spare
-- Delay this maintenance action
-- Accept this availability risk
+3. **What changes the decision?** Example: "If operational tempo increases by 10%, this buffer is no longer sufficient."
 
-Then the decision must be traceable to assumptions, inputs, and sensitivity. Otherwise it is not a decision, it is a bet.
+This is the "missing middle"—the decision layer between raw data and operational action.
 
-I do not build opaque black boxes, and I do not claim certainty where uncertainty dominates.
-
-## Black box vs glass box
-
-ILS/IPS does not need a black box. It needs a **glass box**.
-
-A glass box recommendation answers three questions:
-
-1. **What is the decision?**  
-   Example: increase buffer stock for a specific SKU, or trigger an engineering review.
-
-2. **What is the uncertainty?**  
-   Example: demand is sparse, lead time volatility dominates, failure rates are regime dependent.
-
-3. **What changes the decision?**  
-   Example: a tempo increase shifts the risk curve, supplier constraints change the threshold, deployment context alters acceptable exposure.
-
-This is the missing middle: the decision layer between raw data and operational action.
-
-## Where bounded automation becomes practical
-
-If you want to operationalize the stop point, it helps to define boundaries in concrete terms.
-
-**Allowed automation (Decision Support):**
-
-- Risk scoring with confidence bands
-- What if scenarios (tempo, lead time shocks, demand bursts)
-- Prioritization queues: review these 20 parts first
-- Sensitivity reports: if lead time variance doubles, this is the impact
-- Data quality flags and anomaly detection
-
-**Stop point triggers (Human accountability required):**
-
-- Stocking changes for mission critical items
-- Maintenance deferral recommendations
-- Policy changes that affect readiness exposure
-- Actions that are hard to reverse under operational tempo
-
-Sustainment outcomes must be defensible. That means reviewable reasoning, explicit assumptions, and sensitivity by design.
-
-## What this means for the AI hype train
+## Conclusion
 
 So, am I on the AI train?
 
 Yes.
 
-But I am not riding it to full autonomy narratives. I am riding it to a specific station: **decision support under uncertainty**.
+But I am not riding it to "full autonomy." I am riding it to a specific destination: **Decision support under uncertainty.**
 
-If your ILS/IPS AI roadmap cannot answer:
-
-- What the model assumes
-- What the uncertainty band is
-- What changes the action threshold
-
-Then you do not have decision support. You have a demo.
+If your AI roadmap cannot explain what the model assumes, quantify the uncertainty, or define the action threshold, you do not have a decision support system. You have a demo.
 
 And demos do not keep fleets ready.
