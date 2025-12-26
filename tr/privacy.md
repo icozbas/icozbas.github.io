@@ -20,45 +20,47 @@ permalink: /tr/privacy/
 
     <h3>Özet</h3>
     <p>
-      Bu site kişisel, araştırma odaklı bir web sitesidir. Reklam, kullanıcı hesabı ve ticari üyelik sunmaz.
-      Amaç, içeriği güvenilir şekilde yayınlamak ve siteyi iyileştirmektir.
+      Bu site, kişisel bir akademik web sitesidir. Ticari hizmetler, kullanıcı hesapları veya reklam sunmaz.
+      Site, az veri kullanan ve gizliliğe saygılı olacak şekilde tasarlanmıştır.
     </p>
 
     <h3>Analitik</h3>
     <p>
-      Site kullanımını toplulaştırılmış istatistik düzeyinde anlamak için Cloudflare Web Analytics kullanıyorum.
-      Bu ölçüm, içeriklerin okunma eğilimlerini ve genel trafik yönelimlerini görmeme yardımcı olur.
-      Reklam amaçlı izleme yapmıyorum ve Google Analytics (GA4) kullanmıyorum.
+      Bu web sitesi, üst düzey trafik eğilimlerini (örneğin: sayfa görüntülemeleri, yönlendiriciler ve geniş cihaz kategorileri) anlamak için
+      <strong>Cloudflare Web Analytics</strong> kullanır.
+      Cloudflare, Web Analitiği hizmetinin çerez (cookies) veya localStorage kullanmadığını ve analitik amacıyla bireyler üzerinde
+      parmak izi (fingerprinting) oluşturmadığını belirtir.
     </p>
 
-    <h3>Teknik veriler ve güvenlik</h3>
+    <h3>Teknik kayıtlar ve güvenlik</h3>
     <p>
-      Çoğu web sitesinde olduğu gibi, siteyi sunmak ve kötüye kullanımı azaltmak için bazı teknik veriler işlenebilir.
-      Örneğin IP adresi, tarayıcı bilgisi (user agent), istek zamanı ve temel güvenlik sinyalleri.
-      Bu veriler profil çıkarma amacıyla kullanılmaz.
+      Çoğu web sitesinde olduğu gibi, siteyi sunmak ve kötüye kullanıma karşı korumak için temel teknik veriler işlenebilir
+      (örneğin: IP adresi, tarayıcı bilgisi, istek üst verileri ve güvenlikle ilgili sinyaller).
+      Bu veriler güvenilirlik ve güvenlik için kullanılır, profil oluşturmak için kullanılmaz.
     </p>
 
     <h3>Çerezler</h3>
     <p>
-      Bu sitede reklam veya pazarlama amaçlı çerez kullanmıyorum.
-      Ancak altyapı ve güvenlik katmanları, sınırlı durumlarda zorunlu işlevler için teknik çerezler kullanabilir.
+      Bu web sitesi kasıtlı olarak analitik veya reklam çerezleri ayarlamaz.
+      Bazı çerezler, güvenlik veya kesinlikle gerekli işlevler için altyapı bileşenleri tarafından sınırlı durumlarda ayarlanabilir.
+      Çerezlerin kullanıldığı durumlarda reklam amaçlı değil teknik amaçlıdır.
     </p>
 
     <h3>Veri paylaşımı</h3>
     <p>
-      Trafik ve güvenlik işlemleri, altyapı sağlayıcıları üzerinden gerçekleşebilir.
-      Kişisel verileri satmıyorum.
+      Site trafiği ve güvenlik işlemleri, bir hizmet sağlayıcı olarak Cloudflare'i içerebilir.
+      Kişisel veriler kesinlikle satılmamaktadır.
     </p>
 
-    <h3>Tercihleriniz</h3>
+    <h3>Seçimleriniz</h3>
     <ul>
-      <li>Tarayıcınızın gizlilik ayarlarını kullanabilir veya içerik engelleyicilerle üçüncü taraf bağlantıları kısıtlayabilirsiniz.</li>
-      <li>Gizlilikle ilgili sorularınız için benimle iletişime geçebilirsiniz.</li>
+      <li>Analitik komut dosyalarını ve üçüncü taraf bağlantılarını sınırlamak için tarayıcı özelliklerini veya içerik engelleyicileri kullanabilirsiniz.</li>
+      <li>Gizlilikle ilgili sorularınız için aşağıdaki e-postayı kullanarak benimle iletişime geçebilirsiniz.</li>
     </ul>
 
     <h3>İletişim</h3>
     <p>
-      Gizlilik ile ilgili: <a href="mailto:legal@icozbas.com">legal@icozbas.com</a>
+      Gizlilikle ilgili bir sorunuz varsa: <a href="mailto:legal@icozbas.com">legal@icozbas.com</a>
     </p>
 
   </div>

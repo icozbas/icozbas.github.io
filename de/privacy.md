@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Datenschutzerklärung
+title: Datenschutz
 permalink: /de/privacy/
 ---
 
 <div class="container container-article">
   <div class="article-hero">
-    <h1 class="article-title">Datenschutzerklärung</h1>
+    <h1 class="article-title">DATENSCHUTZ</h1>
     <div class="article-meta">Zuletzt aktualisiert: 25. Dezember 2025</div>
   </div>
 
@@ -20,45 +20,48 @@ permalink: /de/privacy/
 
     <h3>Zusammenfassung</h3>
     <p>
-      Diese Website ist eine persönliche, forschungsorientierte Seite. Sie bietet keine Nutzerkonten, keine Werbung
-      und keine kommerziellen Abonnements. Ziel ist es, Inhalte zuverlässig bereitzustellen und die Website zu verbessern.
+      Dies ist eine persönliche akademische Website. Sie bietet keine kommerziellen Dienste, Nutzerkonten oder Werbung an.
+      Die Seite ist so konzipiert, dass sie datensparsam ist und die Privatsphäre achtet.
     </p>
 
     <h3>Web-Analytics</h3>
     <p>
-      Zur Auswertung von allgemeinen Nutzungstrends verwende ich Cloudflare Web Analytics.
-      Das hilft mir, z. B. Seitenaufrufe und grobe Traffic-Trends zu verstehen.
-      Ich verwende kein Google Analytics (GA4) und keine Werbe- oder Marketing-Tracker.
+      Diese Website verwendet <strong>Cloudflare Web Analytics</strong>, um allgemeine Traffic-Trends zu verstehen
+      (zum Beispiel: Seitenaufrufe, Referrer und grobe Gerätekategorien).
+      Cloudflare gibt an, dass sein Web Analytics-Dienst keine Cookies oder localStorage verwendet und keine digitalen Fingerabdrücke (Fingerprinting)
+      von Personen zu Analysezwecken erstellt.
     </p>
 
-    <h3>Technische Daten und Sicherheit</h3>
+    <h3>Technische Protokolle und Sicherheit</h3>
     <p>
       Wie bei den meisten Websites können grundlegende technische Daten verarbeitet werden, um die Website bereitzustellen
-      und Missbrauch zu verhindern. Dazu können z. B. IP-Adresse, User-Agent, Request-Metadaten und sicherheitsrelevante Signale gehören.
-      Diese Daten werden nicht für Profiling oder Werbung genutzt.
+      und sie vor Missbrauch zu schützen (zum Beispiel: IP-Adresse, User-Agent, Request-Metadaten und sicherheitsrelevante Signale).
+      Diese Daten dienen der Zuverlässigkeit und Sicherheit, nicht der Profilbildung (Profiling).
     </p>
 
     <h3>Cookies</h3>
     <p>
-      Diese Website setzt keine Analyse- oder Werbe-Cookies zu Marketingzwecken.
-      In begrenzten Fällen können jedoch durch Infrastruktur- oder Sicherheitskomponenten technisch notwendige Cookies verwendet werden.
+      Diese Website setzt absichtlich keine Analyse- oder Werbe-Cookies.
+      In begrenzten Fällen können jedoch durch Infrastrukturkomponenten Cookies für Sicherheitszwecke oder
+      zwingend erforderliche Funktionen gesetzt werden.
+      Sollten Cookies verwendet werden, sind sie technisch unbedingt erforderlich und dienen nicht zu Werbezwecken.
     </p>
 
     <h3>Datenweitergabe</h3>
     <p>
-      Verarbeitung von Traffic- und Sicherheitsdaten kann über Dienstleister (z. B. Infrastruktur/Delivery) erfolgen.
+      Bei der Verarbeitung von Website-Traffic und Sicherheitsmechanismen kann Cloudflare als Dienstleister einbezogen werden.
       Ich verkaufe keine personenbezogenen Daten.
     </p>
 
     <h3>Ihre Optionen</h3>
     <ul>
-      <li>Sie können Browser-Einstellungen oder Content-Blocker nutzen, um Verbindungen zu Drittanbietern einzuschränken.</li>
-      <li>Bei Fragen zum Datenschutz können Sie mich kontaktieren.</li>
+      <li>Sie können Browser-Einstellungen oder Content-Blocker nutzen, um Analyse-Skripte und Verbindungen zu Drittanbietern einzuschränken.</li>
+      <li>Bei Fragen zum Datenschutz können Sie mich über die unten stehende E-Mail-Adresse kontaktieren.</li>
     </ul>
 
     <h3>Kontakt</h3>
     <p>
-      Bei Datenschutzfragen: <a href="mailto:legal@icozbas.com">legal@icozbas.com</a>
+      Wenn Sie eine Frage zum Datenschutz haben: <a href="mailto:legal@icozbas.com">legal@icozbas.com</a>
     </p>
 
   </div>
